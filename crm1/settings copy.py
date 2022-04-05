@@ -23,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-a68y1x$snlzl3^r!la%63%4r15!xu#92*a1s8!5oda^3kom1ts'
 
-# ========================================== SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = [
@@ -138,10 +137,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-# # ======================================= Local
-# MEDIA_URL = '/images/'
-# # ======================================= Heroku Deployment
-MEDIA_URL = 'static/images/'
+# Local
+MEDIA_URL = '/images/'
+# # Heroku Deployment
+# MEDIA_URL = 'static/images/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 

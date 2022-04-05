@@ -238,6 +238,9 @@ def updateOrder(request, order_id):
     ord = Order.objects.get(id = order_id)
     ord_form = OrderForm(instance = ord)     # same as create order but pre-fill the info of this order
 
+    print(f'>> ord: {ord}')
+    print(f'>> ord_form: {ord_form}')
+
     if request.method == 'POST':
         print(f">> {request.POST}")
         ord_form = OrderForm(request.POST, instance = ord)
@@ -251,6 +254,8 @@ def updateOrder(request, order_id):
                 'ord_form': ord_form,
             }
         )
+
+
 
 @login_required(login_url='login')
 # @allowed_user(allowed_roles = ['admin'])
