@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-a68y1x$snlzl3^r!la%63%4r15!xu#92*a1s8!5oda^3kom1ts
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://buiquangbao-crm1.herokuapp.com/',
+    'buiquangbao-crm1.herokuapp.com',
     '127.0.0.1',
 ]
 
